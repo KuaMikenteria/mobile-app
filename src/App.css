@@ -1,0 +1,65 @@
+/* Make #root fill the screen and center content */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  
+  background-color: #111;
+
+  /* added */
+  background-image: url('./assets/cover-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Wrapper to nudge button downward slightly */
+.offset-wrapper {
+  transform: translateY(50px); /* adjust this value as needed */
+}
+
+/* Purple button style */
+.purple-button {
+  background-color: purple;
+  color: solid white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.purple-button:hover {
+  background-color: rebeccapurple;
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.7); /* Glowing shadow on click */
+  transform: scale(1.05); /* Slightly scale up on click */
+}
+
+/* added */
+
+.foods-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7); /* transparent background */
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+/* NEW: Add a wrapper around each button */
+.recipe-card {
+  background-color: rgba(0, 0, 0, 0.5); /* transparent black */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}

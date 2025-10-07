@@ -1,0 +1,43 @@
+.image-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image-button img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.image-button span {
+  margin-top: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.image-button:hover {
+  transform: scale(1.05);
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #9e5cf5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #7c42cf;
+}

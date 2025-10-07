@@ -1,0 +1,51 @@
+.foods-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #111;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.image-button img {
+  width: 220px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-button span {
+  color: white;
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.image-button:hover {
+  transform: scale(1.05);
+}
+
+.back-button {
+  margin-top: 3rem;
+  background-color: #444;
+  border: none;
+  padding: 0.7em 1.5em;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  background-color: #666;
+}

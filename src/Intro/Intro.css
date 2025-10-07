@@ -1,0 +1,70 @@
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* transparent dark background */
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Wrapper to keep buttons centered away from back button */
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Unified image-button style */
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.image-button img {
+  width: 220px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* soft shadow for depth */
+}
+
+.image-button span {
+  color: white;
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.image-button:hover {
+  transform: scale(1.05);
+}
+
+/* Unified back-button style */
+.back-button {
+  position: absolute;
+  bottom: 2rem;
+  background-color: purple;
+  border: none;
+  padding: 0.7em 1.5em;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(102, 102, 102, 0.9);
+}
